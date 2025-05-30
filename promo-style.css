@@ -1,0 +1,20 @@
+nav{
+    background-color: #65b7ff;
+    font-family: 'Crimson Pro', serif;
+}
+
+.hero-image {
+  background-image: url('promo.png');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  border-radius: .5rem;
+}
+.hero-image::before {
+  content: \"\";
+}
+
+.filter-btn.active {
+  background-color: #245aab;
+  color: rgb(255, 255, 255);
+}
