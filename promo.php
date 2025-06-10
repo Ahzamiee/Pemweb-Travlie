@@ -61,20 +61,20 @@ $categories = [
                             <h5 class="card-title"><?= htmlspecialchars($promo->title) ?></h5>
                             <p class="card-text"><?= htmlspecialchars($promo->description) ?></p>
                         </div>
-<div class="card-footer d-flex justify-content-between align-items-start">
-    <div>
-        <small>Kategori: <?= htmlspecialchars($promo->category) ?></small><br>
-        <small>Diskon: <?= htmlspecialchars($promo->discount_value) ?> <?= $promo->discount_type === 'Percentage' ? '%' : 'Rp' ?></small><br>
-        <small>Periode: <?= $promo->start_date ?> – <?= $promo->end_date ?></small>
-    </div>
-    <div>
-        <a href="index.php?c=promo&m=delete&id=<?= $promo->promo_id ?>"
-           class="btn btn-sm btn-danger"
-           onclick="return confirm('Yakin ingin menghapus promo ini?')">
-           Hapus
-        </a>
-    </div>
-</div>
+                        <div class="card-footer d-flex justify-content-between align-items-start">
+                          <div>
+                            <small>Kategori: <?= htmlspecialchars($promo->category) ?></small><br>
+                            <small>Diskon: <?= htmlspecialchars($promo->discount_value) ?> <?= $promo->discount_type === 'Percentage' ? '%' : 'Rp' ?></small><br>
+                            <small>Periode: <?= $promo->start_date ?> – <?= $promo->end_date ?></small>
+                          </div>
+                          <div>
+                            <a href="index.php?c=promo&m=delete&id=<?= $promo->promo_id ?>"
+                              class="btn btn-sm btn-danger"
+                              onclick="return confirm('Yakin ingin menghapus promo ini?')">
+                              Hapus
+                            </a>
+                          </div>
+                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>
